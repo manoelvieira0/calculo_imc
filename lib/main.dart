@@ -33,6 +33,7 @@ class _HomeState extends State<Home> {
       ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -59,13 +60,16 @@ class _HomeState extends State<Home> {
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.green, fontSize: 16.0),
             ),
-            Container(
-              height: 40,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text(
-                  'Calcular',
-                  style: TextStyle(fontSize: 16),
+            Padding(
+              padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+              child: Container(
+                height: 40,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Calcular',
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ),
               ),
             ),
